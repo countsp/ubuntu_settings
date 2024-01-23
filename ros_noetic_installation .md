@@ -5,6 +5,8 @@ summarzied from [guide](https://blog.csdn.net/qq_29750461/article/details/128347
 其中重启可以使用ibus restart代替
 
 
+
+
 ### 2.Ros installation
 
 summarzied from [guide](https://linux.how2shout.com/learn-ros-noetic-installation-on-ubuntu-20-04-lts/)
