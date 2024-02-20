@@ -39,3 +39,6 @@ reboot
 ```
 nvidia-smi
 ```
+
+#### cuda安装
+参考 https://www.zhihu.com/question/269324025/answer/3105264795?utm_id=0
