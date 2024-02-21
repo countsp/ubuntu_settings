@@ -109,11 +109,11 @@ Build cuda_11.6.r11.6/compiler.30794723_0
 
 ```
 tar -zxvf TensorRT-8.4.2.4.Linux.x86_64-gnu.cuda-11.6.cudnn8.4.tar.gz
-# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<TensorRT-$8.4.2.4/lib>
 export TENSORRT_DIR=$(pwd)/TensorRT-8.4.2.4
 cd TensorRT-8.4.2.4/python
 python3 -V# pip install tensorrt-8.4.2.4-cp38-none-linux_x86_64.whl
 export LD_LIBRARY_PATH=/home/chopin/Downloads/TensorRT-8.4.2.4/targets/x86_64-linux-gnu/lib:$LD_LIBRARY_PATH
- python3import tensorrt
+python3
+import tensorrt
 
 ```
