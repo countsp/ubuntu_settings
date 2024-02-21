@@ -39,19 +39,17 @@ reboot
 ```
 nvidia-smi
 ```
+
 ---
-sudo apt install ros-galactic-pacmod3
-echo '' >> ~/.bashrc && echo "export RMW_IMPLEMENTATION=${rmw_implementation}" >> ~/.bashrc
-pip3 install gdown
-sudo apt install geographiclib-tools
-sudo geographiclib-get-geoids egm2008-1
- pre_commit_clang_format_version=17.0.6
- pip3 install pre-commit clang-format==${pre_commit_clang_format_version}
-sudo apt install golang
- wget -O /tmp/amd64.env https://raw.githubusercontent.com/autowarefoundation/autoware/main/amd64.env && source /tmp/amd64.env
- wget https://developer.download.nvidia.com/compute/cuda/11.6.0/local_installers/cuda_11.6.0_510.39.01_linux.run
+
+
+#### cuda安装
+```
+wget https://developer.download.nvidia.com/compute/cuda/11.6.0/local_installers/cuda_11.6.0_510.39.01_linux.run
 sudo sh cuda_11.6.0_510.39.01_linux.run
-[sudo] password for chopin: 
+```
+
+```
 ===========
 = Summary =
 ===========
@@ -69,10 +67,22 @@ To install the driver using this installer, run the following command, replacing
     sudo <CudaInstaller>.run --silent --driver
 
 Logfile is /var/log/cuda-installer.log
-chopin@chopin-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/autoware$ sudo vim ~/.bashrc
-sudo: vim: command not found
-nvcc -V
+```
 
+```
+nvcc -V
+```
+
+```
+输出
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2021 NVIDIA Corporation
+Built on Fri_Dec_17_18:16:03_PST_2021
+Cuda compilation tools, release 11.6, V11.6.55
+Build cuda_11.6.r11.6/compiler.30794723_0
+
+```
+---
 #### cudnn安装
 参考 https://www.zhihu.com/question/269324025/answer/3105264795?utm_id=0
 
