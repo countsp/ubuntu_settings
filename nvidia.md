@@ -40,6 +40,38 @@ reboot
 nvidia-smi
 ```
 ---
+sudo apt install ros-galactic-pacmod3
+echo '' >> ~/.bashrc && echo "export RMW_IMPLEMENTATION=${rmw_implementation}" >> ~/.bashrc
+pip3 install gdown
+sudo apt install geographiclib-tools
+sudo geographiclib-get-geoids egm2008-1
+ pre_commit_clang_format_version=17.0.6
+ pip3 install pre-commit clang-format==${pre_commit_clang_format_version}
+sudo apt install golang
+ wget -O /tmp/amd64.env https://raw.githubusercontent.com/autowarefoundation/autoware/main/amd64.env && source /tmp/amd64.env
+ wget https://developer.download.nvidia.com/compute/cuda/11.6.0/local_installers/cuda_11.6.0_510.39.01_linux.run
+sudo sh cuda_11.6.0_510.39.01_linux.run
+[sudo] password for chopin: 
+===========
+= Summary =
+===========
+
+Driver:   Not Selected
+Toolkit:  Installed in /usr/local/cuda-11.6/
+
+Please make sure that
+ -   PATH includes /usr/local/cuda-11.6/bin
+ -   LD_LIBRARY_PATH includes /usr/local/cuda-11.6/lib64, or, add /usr/local/cuda-11.6/lib64 to /etc/ld.so.conf and run ldconfig as root
+
+To uninstall the CUDA Toolkit, run cuda-uninstaller in /usr/local/cuda-11.6/bin
+***WARNING: Incomplete installation! This installation did not install the CUDA Driver. A driver of version at least 510.00 is required for CUDA 11.6 functionality to work.
+To install the driver using this installer, run the following command, replacing <CudaInstaller> with the name of this run file:
+    sudo <CudaInstaller>.run --silent --driver
+
+Logfile is /var/log/cuda-installer.log
+chopin@chopin-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/autoware$ sudo vim ~/.bashrc
+sudo: vim: command not found
+nvcc -V
 
 #### cudnn安装
 参考 https://www.zhihu.com/question/269324025/answer/3105264795?utm_id=0
@@ -64,3 +96,14 @@ nvidia-smi
 -> 选择 TensorRT 8.4 GA Update 1 for Linux x86_64 and CUDA 11.0, 11.1, 11.2, 11.3, 11.4, 11.5, 11.6 and 11.7 TAR Package
 
 [直接下载地址 download link](https://developer.download.nvidia.com/compute/machine-learning/tensorrt/secure/8.4.2/tars/TensorRT-8.4.2.4.Linux.x86_64-gnu.cuda-11.6.cudnn8.4.tar.gz?qHxQ2C0i2WNJ8xRgMLOTT-vwQFG6oFYRROv9ybqjwiGAgv76dsgFy8Y58DXoGHhQcwqoxX3ItYombc7nvA2_902ZUwDWmvEdQu1Qf7mvOQ04JVe-cZ7cl30fLoQNBBvcvIy34WHr28CwlUtsCCH47KaOCK-Yfftufa20mhBZ_CyKYOY8N9svdCUR6oqS5KiZHhztw9jF-QHbPgK9fc0u9y87Sv_MOdaa4p-xiO2u&t=eyJscyI6IndlYnNpdGUiLCJsc2QiOiJsaW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzJTNBLy9kZXZlbG9wZXIubnZpZGlhLmNvbS9jdWRhLXRvb2xraXQtYXJjaGl2ZSJ9)
+
+```
+tar -zxvf TensorRT-8.4.2.4.Linux.x86_64-gnu.cuda-11.6.cudnn8.4.tar.gz
+# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<TensorRT-$8.4.2.4/lib>
+export TENSORRT_DIR=$(pwd)/TensorRT-8.4.2.4
+cd TensorRT-8.4.2.4/python
+python3 -V# pip install tensorrt-8.4.2.4-cp38-none-linux_x86_64.whl
+export LD_LIBRARY_PATH=/home/chopin/Downloads/TensorRT-8.4.2.4/targets/x86_64-linux-gnu/lib:$LD_LIBRARY_PATH
+ python3import tensorrt
+
+```
