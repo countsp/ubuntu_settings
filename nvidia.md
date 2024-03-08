@@ -100,6 +100,22 @@ https://blog.csdn.net/weixin_37926734/article/details/123033286
 
 [直接下载地址 download link](https://developer.download.nvidia.com/compute/cudnn/secure/8.9.7/local_installers/11.x/cudnn-linux-x86_64-8.9.7.29_cuda11-archive.tar.xz?hHvyX3EPrUBxJSK7mPVcUAQ_-rETyJeNMoemZJIY5BuJZUeZ2gSsv4OpUXWhuMFNHHS4mrC-0Wl2HC_543b-7xpZsQV8vb3sY_xwD2wKEvAPgtk796O5oCdZGDefANDfDS2yinDYLhqhyLqzvwS3Qfncit6jZnAccMrBf5yTpVx6xEZJGdSuAg44X9vqColvMCzG-d0bc11PsPQ7JWulzUg=&t=eyJscyI6IndlYnNpdGUiLCJsc2QiOiJsaW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzJTNBLy9kZXZlbG9wZXIubnZpZGlhLmNvbS9jdWRhLXRvb2xraXQtYXJjaGl2ZSJ9)
 
+
+
+需要将两组文件复制到cuda目录下
+
+[reference](https://blog.csdn.net/weixin_37926734/article/details/123033286)
+```
+cp cuda/lib64/* /usr/local/cuda-11.6/lib64/
+cp cuda/include/* /usr/local/cuda-11.6/include/
+```
+
+
+拷贝完成后，我们可以使用如下的命令查看cuDNN的信息：
+
+```
+cat /usr/local/cuda-11.0/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+```
 ---
 
 #### tensorRT安装
@@ -121,3 +137,5 @@ python3
 import tensorrt
 
 ```
+
+https://blog.51cto.com/u_12870633/6149817
