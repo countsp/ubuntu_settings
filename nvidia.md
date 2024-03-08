@@ -82,6 +82,10 @@ Cuda compilation tools, release 11.6, V11.6.55
 Build cuda_11.6.r11.6/compiler.30794723_0
 
 ```
+#### cuda 卸载
+
+https://blog.csdn.net/weixin_37926734/article/details/123033286
+
 ---
 #### cudnn安装
 参考 https://www.zhihu.com/question/269324025/answer/3105264795?utm_id=0
