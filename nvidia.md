@@ -114,7 +114,7 @@ cp cuda/include/* /usr/local/cuda-11.6/include/
 拷贝完成后，我们可以使用如下的命令查看cuDNN的信息：
 
 ```
-cat /usr/local/cuda-11.0/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+cat /usr/local/cuda-11include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 ```
 ---
 
@@ -136,6 +136,13 @@ export LD_LIBRARY_PATH=/home/chopin/Downloads/TensorRT-8.4.2.4/targets/x86_64-li
 python3
 import tensorrt
 
+```
+
+chopin@chopin-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/TensorRT-8.4.2.4/TensorRT-8.4.2.4$ sudo cp -r ./lib/* /usr/lib
+chopin@chopin-HP-Z2-Tower-G9-Workstation-Desktop-PC:~/TensorRT-8.4.2.4/TensorRT-8.4.2.4$ sudo cp -r ./include/* /usr/include
+```
+pip3 install tensorrt-8.4.2.4-cp38-none-linux_x86_64.whl 
+pip3 install graphsurgeon-0.4.6-py2.py3-none-any.whl
 ```
 
 https://blog.51cto.com/u_12870633/6149817
