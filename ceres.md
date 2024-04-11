@@ -22,3 +22,9 @@ cmake ..
 make
 sudo make install
 ```
+4.验证
+```
+bin/simple_bundle_adjuster  ../data/problem-16-22106-pre.txt 
+```
+
+![Screenshot from 2024-04-11 01-21-57](https://github.com/countsp/ubuntu_settings/assets/102967883/9c499be6-14eb-4c87-abcf-f0097006de6c)
