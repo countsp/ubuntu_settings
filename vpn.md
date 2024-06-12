@@ -8,3 +8,6 @@ install anyconnect-linux64-4.10.07073-core-vpn-webdeploy-k9
 chmod +x anyconnect-linux64-4.10.07073-core-vpn-webdeploy-k9.sh 
 ./anyconnect-linux64-4.10.07073-core-vpn-webdeploy-k9.sh
 ```
+
+Clash install
+https://github.com/countsp/clash_for_windows_pkg
