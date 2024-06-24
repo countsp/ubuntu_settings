@@ -17,7 +17,7 @@ rmmod nouveau( optional )
 3.执行
 
 ```
-root@Test#lsmod | grep nouveau
+lsmod | grep nouveau
 ```
 
 如果没有任何回显，则说明nouveau没有被加载。
