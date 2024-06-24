@@ -30,7 +30,15 @@ check for suitable driver version (ending with recommended)
 
 5.setting->software&updates->additional drivers安装驱动。选择合适的版本
 
+或者 使用命令 sudo apt install nvidia-driver-535-server-open 安装，如果太慢ppa换源
+
+```
+gedit /etc/apt/sources.list.d
+# 将文件中的http://ppa.launchpad.net替换为https://launchpad.proxy.ustclug.org
+```
+
 设置密码，如 12345678
+
 ```
 reboot
 ````
