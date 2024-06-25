@@ -1,3 +1,11 @@
+# reference version
+
+cuda 11.6.0
+
+cudnn 8.4.0
+
+tensorrt 8.4.2.4
+
 # GPU Driver
 
 1.在安装NVIDIA驱动时，需要禁用nouveau驱动才可以。
@@ -183,7 +191,13 @@ cat /usr/local/cuda-11.6/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 
 # tensorRT安装
 
-[Ref](https://blog.csdn.net/m0_60657960/article/details/134770397)
+[Ref](https://blog.csdn.net/m0_60657960/article/details/134770397)\
+
+Check for support version!
+
+[tensorrt support version](https://docs.nvidia.com/deeplearning/tensorrt/support-matrix/index.html)
+![image](https://github.com/countsp/ubuntu_settings/assets/102967883/5e4282b5-47a3-452d-b164-fdac6913a78f)
+
 
 [tensorRT 8.x 下载地址](https://developer.nvidia.com/nvidia-tensorrt-8x-download)
 
