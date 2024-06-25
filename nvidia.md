@@ -116,7 +116,7 @@ To install the driver using this installer, run the following command, replacing
 Logfile is /var/log/cuda-installer.log
 ```
 
-```
+
 
 #### cuda 卸载
 
@@ -128,7 +128,7 @@ https://blog.csdn.net/weixin_37926734/article/details/123033286
 
 [cudnn 下载地址](https://developer.nvidia.com/rdp/cudnn-archive)
 
--> 选择 Download cuDNN v8.9.7 (December 5th, 2023), for CUDA 11.x
+-> 选择 Download cuDNN v8.4.0 (April 1st, 2022), for CUDA 11.x
 
 -> 选择 Local Installers for Windows and Linux, Ubuntu(x86_64, armsbsa)
 
