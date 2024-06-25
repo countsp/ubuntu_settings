@@ -56,6 +56,8 @@ nvidia-smi
 
 
 #### cuda安装
+go to official website
+https://developer.nvidia.com/cuda-toolkit-archive
 ```
 wget https://developer.download.nvidia.com/compute/cuda/11.6.0/local_installers/cuda_11.6.0_510.39.01_linux.run
 sudo sh cuda_11.6.0_510.39.01_linux.run
