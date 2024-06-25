@@ -30,5 +30,6 @@ sudo apt install ibus-clutter
 ibus restart
 ```
 
-9.设置-区域与语言-输入源- +
+9.Settings -- Region and Language -- Input Sources  --  +
+
 选择 中文智能拼音
