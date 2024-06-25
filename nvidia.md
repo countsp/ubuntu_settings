@@ -75,9 +75,9 @@ export CUDA_HOME=$CUDA_HOME:/usr/local/cuda-11.8
 ```
 
 
-nvcc -V test
+test
 ```
-
+nvcc -V 
 ```
 输出
 nvcc: NVIDIA (R) Cuda compiler driver
