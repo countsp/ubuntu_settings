@@ -1,4 +1,4 @@
-# reference version
+![image](https://github.com/countsp/ubuntu_settings/assets/102967883/4a504fd8-9fb9-4828-88fa-e946514da926)![image](https://github.com/countsp/ubuntu_settings/assets/102967883/4a504fd8-9fb9-4828-88fa-e946514da926)# reference version
 
 cuda 11.6.0
 
@@ -238,6 +238,26 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/chopin-aigo-2004/driver/TensorRT-8
     cd TensorRT-8.6.1.6/graphsurgeon
     pip install graphsurgeon-0.4.6-py2.py3-none-any.whl
     
+
+### verify installation
+
+[Ref](https://blog.51cto.com/u_12870633/6149817)
+
+然后验证安装是否成功，进入到 /usr/local/TensorRT-8.5.3.1/samples/sampleOnnxMNIST路径下，执行
+
+```
+sudo make
+
+```
+编译成功后显示可执行那个文件在如下目录
+cd 
+
+进入/usr/local/TensorRT-8.5.3.1/bin目录，运行可执行文件sample_onnx_mnist，如果编译和运行过程都没有问题则说明tensorrt安装成功，运行结果如下
+
+![image](https://github.com/countsp/ubuntu_settings/assets/102967883/b675e3c9-1987-477a-b92b-4b761b8fc013)
+
+
+
 
 
 (old version)    
