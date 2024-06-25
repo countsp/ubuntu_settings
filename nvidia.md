@@ -182,6 +182,9 @@ cat /usr/local/cuda-11.6/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 ---
 
 # tensorRT安装
+
+[Ref](https://blog.csdn.net/m0_60657960/article/details/134770397)
+
 [tensorRT 8.x 下载地址](https://developer.nvidia.com/nvidia-tensorrt-8x-download)
 
 -> 选择 TensorRT 8.4 GA Update 1
@@ -190,6 +193,40 @@ cat /usr/local/cuda-11.6/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 
 [直接下载地址 download link]([https://developer.download.nvidia.com/compute/machine-learning/tensorrt/secure/8.4.2/tars/TensorRT-8.4.2.4.Linux.x86_64-gnu.cuda-11.6.cudnn8.4.tar.gz?qHxQ2C0i2WNJ8xRgMLOTT-vwQFG6oFYRROv9ybqjwiGAgv76dsgFy8Y58DXoGHhQcwqoxX3ItYombc7nvA2_902ZUwDWmvEdQu1Qf7mvOQ04JVe-cZ7cl30fLoQNBBvcvIy34WHr28CwlUtsCCH47KaOCK-Yfftufa20mhBZ_CyKYOY8N9svdCUR6oqS5KiZHhztw9jF-QHbPgK9fc0u9y87Sv_MOdaa4p-xiO2u&t=eyJscyI6IndlYnNpdGUiLCJsc2QiOiJsaW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzJTNBLy9kZXZlbG9wZXIubnZpZGlhLmNvbS9jdWRhLXRvb2xraXQtYXJjaGl2ZSJ9](https://developer.nvidia.com/compute/machine-learning/tensorrt/secure/8.4.2/tars/tensorrt-8.4.2.4.linux.x86_64-gnu.cuda-11.6.cudnn8.4.tar.gz))
 
+```
+tar -zxvf TensorRT-8.4.2.4.Linux.x86_64-gnu.cuda-11.6.cudnn8.4.tar.gz
+```
+
+
+add to bashrc
+```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/chopin-aigo-2004/driver/TensorRT-8.4.2.4/lib
+```
+
+
+为了避免其它软件找不到 TensorRT 的库，建议把 TensorRT 的库和头文件添加到系统路径下
+```
+    # TensorRT路径下
+    sudo cp -r ./lib/* /usr/lib
+    sudo cp -r ./include/* /usr/include
+```
+要使用 python 版本，则使用 pip 安装，执行下边的指令
+
+    # 安装TensorRT
+    cd TensorRT-8.6.1.6/python
+    pip install tensorrt-8.6.1-cp38-none-linux_x86_64.whl
+     
+    # 安装UFF,支持tensorflow模型转化
+    cd TensorRT-8.6.1.6/uff
+    pip install uff-0.6.9-py2.py3-none-any.whl
+     
+    # 安装graphsurgeon，支持自定义结构
+    cd TensorRT-8.6.1.6/graphsurgeon
+    pip install graphsurgeon-0.4.6-py2.py3-none-any.whl
+    
+
+
+(old version)    
 ```
 tar -zxvf TensorRT-8.4.2.4.Linux.x86_64-gnu.cuda-11.6.cudnn8.4.tar.gz
 export TENSORRT_DIR=$(pwd)/TensorRT-8.4.2.4
