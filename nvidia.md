@@ -1,4 +1,7 @@
+# GPU Driver
+
 1.在安装NVIDIA驱动时，需要禁用nouveau驱动才可以。
+
 禁用方法如下：
 ```
 sudo gedit  /etc/modprobe.d/blacklist.conf
@@ -55,7 +58,8 @@ nvidia-smi
 ---
 
 
-#### cuda安装
+# cuda安装
+
 ref:
 
 [reference1](https://blog.csdn.net/KRISNAT/article/details/134870009)
@@ -176,7 +180,7 @@ cat /usr/local/cuda-11.6/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 
 ---
 
-#### tensorRT安装
+# tensorRT安装
 [tensorRT 8.x 下载地址](https://developer.nvidia.com/nvidia-tensorrt-8x-download)
 
 -> 选择 TensorRT 8.4 GA Update 1
