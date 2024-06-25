@@ -57,9 +57,9 @@ reboot
 ````
 进入MOK
 
-select 第二项 enter 输入 password
+![image](https://github.com/countsp/ubuntu_settings/assets/102967883/b675e3c9-1987-477a-b92b-4b761b8fc013)
 
-再reboot
+第二项 Enroll MDK -- continue -- yes -- 输入 password  -- Reboot
 
 ```
 nvidia-smi
@@ -255,8 +255,6 @@ sudo make
 cd 
 
 进入/usr/local/TensorRT-8.5.3.1/bin目录，运行可执行文件sample_onnx_mnist，如果编译和运行过程都没有问题则说明tensorrt安装成功，运行结果如下
-
-![image](https://github.com/countsp/ubuntu_settings/assets/102967883/b675e3c9-1987-477a-b92b-4b761b8fc013)
 
 
 
