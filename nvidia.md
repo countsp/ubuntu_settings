@@ -56,8 +56,18 @@ nvidia-smi
 
 
 #### cuda安装
-go to official website
-https://developer.nvidia.com/cuda-toolkit-archive
+
+官方链接：[CUDA Toolkit - Free Tools and Training](https://developer.nvidia.com/cuda-toolkit-archive)  https://developer.nvidia.com/cuda-toolkit-archive
+
+如果这不是想要的版本，则滑动滚轮至最下方，找到Archive of Previous CUDA Releases，点击进入选择你想要安装的cuda版本，并选择服务器类型，根据下方显示的Installation Instructions安装cuda即可。
+
+![image](https://github.com/countsp/ubuntu_settings/assets/102967883/e725d68e-e6b4-4f5c-97c1-7b9bf9c440b7)
+
+
+![image](https://github.com/countsp/ubuntu_settings/assets/102967883/b8487a60-7839-4d4e-a061-c655eb458856)
+
+
+
 ```
 wget https://developer.download.nvidia.com/compute/cuda/11.6.0/local_installers/cuda_11.6.0_510.39.01_linux.run
 sudo sh cuda_11.6.0_510.39.01_linux.run
