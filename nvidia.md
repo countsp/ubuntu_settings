@@ -56,6 +56,13 @@ nvidia-smi
 
 
 #### cuda安装
+ref:
+
+[reference1](https://blog.csdn.net/KRISNAT/article/details/134870009)
+
+[reference2](https://zhuanlan.zhihu.com/p/691711768)
+
+[reference3](https://blog.csdn.net/weixin_37926734/article/details/123033286)
 
 官方链接：[CUDA Toolkit - Free Tools and Training](https://developer.nvidia.com/cuda-toolkit-archive)  https://developer.nvidia.com/cuda-toolkit-archive
 
@@ -144,19 +151,29 @@ https://blog.csdn.net/weixin_37926734/article/details/123033286
 
 需要将两组文件复制到cuda目录下
 
-[reference](https://blog.csdn.net/weixin_37926734/article/details/123033286)
+```
+sudo cp cudnn-linux-x86_64-8.9.7.29_cuda11-archive/include/* /usr/local/cuda-11.6/include
+
+sudo cp cudnn-linux-x86_64-8.9.7.29_cuda11-archive/lib/libcudnn* /usr/local/cuda-11.6/lib64
 
 ```
-cp cuda/lib64/* /usr/local/cuda-11.6/lib64/
-cp cuda/include/* /usr/local/cuda-11.6/include/
+
+添加读取权限
+
 ```
 
+sudo chmod a+r /usr/local/cuda-11.8/include/cudnn.h
+sudo chmod a+r /usr/local/cuda-11.8/lib64/libcudnn*
+```
 
 拷贝完成后，我们可以使用如下的命令查看cuDNN的信息：
 
 ```
-cat /usr/local/cuda-11include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+cat /usr/local/cuda-11.6/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 ```
+
+![Screenshot from 2024-06-25 10-08-51](https://github.com/countsp/ubuntu_settings/assets/102967883/3155f211-8274-4968-90e0-db89b3c2073b)
+
 ---
 
 #### tensorRT安装
