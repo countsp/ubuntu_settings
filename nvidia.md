@@ -67,7 +67,31 @@ nvidia-smi
 ![image](https://github.com/countsp/ubuntu_settings/assets/102967883/b8487a60-7839-4d4e-a061-c655eb458856)
 
 
+add command to bashrc
+```
+export PATH=$PATH:/usr/local/cuda-11.8/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.8/lib64
+export CUDA_HOME=$CUDA_HOME:/usr/local/cuda-11.8
+```
 
+
+nvcc -V test
+```
+
+```
+输出
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2021 NVIDIA Corporation
+Built on Fri_Dec_17_18:16:03_PST_2021
+Cuda compilation tools, release 11.6, V11.6.55
+Build cuda_11.6.r11.6/compiler.30794723_0
+
+```
+
+
+
+
+old version (optional)
 ```
 wget https://developer.download.nvidia.com/compute/cuda/11.6.0/local_installers/cuda_11.6.0_510.39.01_linux.run
 sudo sh cuda_11.6.0_510.39.01_linux.run
@@ -94,18 +118,7 @@ Logfile is /var/log/cuda-installer.log
 ```
 
 ```
-nvcc -V
-```
 
-```
-输出
-nvcc: NVIDIA (R) Cuda compiler driver
-Copyright (c) 2005-2021 NVIDIA Corporation
-Built on Fri_Dec_17_18:16:03_PST_2021
-Cuda compilation tools, release 11.6, V11.6.55
-Build cuda_11.6.r11.6/compiler.30794723_0
-
-```
 #### cuda 卸载
 
 https://blog.csdn.net/weixin_37926734/article/details/123033286
