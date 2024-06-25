@@ -138,7 +138,8 @@ https://blog.csdn.net/weixin_37926734/article/details/123033286
 ---
 
 
-#### cudnn安装
+# cudnn安装
+
 参考 https://www.zhihu.com/question/269324025/answer/3105264795?utm_id=0
 
 [cudnn 下载地址](https://developer.nvidia.com/rdp/cudnn-archive)
