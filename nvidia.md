@@ -1,4 +1,6 @@
-![image](https://github.com/countsp/ubuntu_settings/assets/102967883/4a504fd8-9fb9-4828-88fa-e946514da926)![image](https://github.com/countsp/ubuntu_settings/assets/102967883/4a504fd8-9fb9-4828-88fa-e946514da926)# reference version
+[image](https://docs.nvidia.com/deeplearning/tensorrt/support-matrix/index.html)
+
+# reference version
 
 cuda 11.6.0
 
