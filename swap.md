@@ -13,3 +13,7 @@ sudo swapon /swapfile
 sudo swapon --show
 echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 ```
+或者减少并行任务数
+```
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --parallel-workers 2
+```
