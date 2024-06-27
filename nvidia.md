@@ -24,7 +24,7 @@ options nouveau modeset=0
 
 2.保存退出后，执行
 ```
-update-initramfs -u
+sudo update-initramfs -u
 rmmod nouveau( optional )
 ```
 3.执行
