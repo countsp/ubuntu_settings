@@ -90,9 +90,13 @@ ref:
 
 add command to bashrc
 ```
-export PATH=$PATH:/usr/local/cuda-11.6/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.6/lib64
-export CUDA_HOME=$CUDA_HOME:/usr/local/cuda-11.6
+export PATH=$PATH:/usr/local/cuda/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+export CUDA_HOME=$CUDA_HOME:/usr/local/cuda
+
+cd /usr/local
+sudo ln -s ./cuda-12.4/ ./cuda         (软链接换成安装的cuda版本)
+
 ```
 
 
