@@ -171,9 +171,9 @@ https://blog.csdn.net/weixin_37926734/article/details/123033286
 需要将两组文件复制到cuda目录下
 
 ```
-sudo cp cudnn-linux-x86_64-8.9.7.29_cuda11-archive/include/* /usr/local/cuda-11.6/include
+sudo cp cudnn-linux-x86_64-8.9.7.29_cuda11-archive/include/* /usr/local/cuda-12.4/include
 
-sudo cp cudnn-linux-x86_64-8.9.7.29_cuda11-archive/lib/libcudnn* /usr/local/cuda-11.6/lib64
+sudo cp cudnn-linux-x86_64-8.9.7.29_cuda11-archive/lib/libcudnn* /usr/local/cuda-12.4/lib64
 
 ```
 
@@ -181,8 +181,8 @@ sudo cp cudnn-linux-x86_64-8.9.7.29_cuda11-archive/lib/libcudnn* /usr/local/cuda
 
 ```
 
-sudo chmod a+r /usr/local/cuda-11.8/include/cudnn.h
-sudo chmod a+r /usr/local/cuda-11.8/lib64/libcudnn*
+sudo chmod a+r /usr/local/cuda-12.4/include/cudnn.h
+sudo chmod a+r /usr/local/cuda-12.4/lib64/libcudnn*
 ```
 
 拷贝完成后，我们可以使用如下的命令查看cuDNN的信息：
