@@ -33,13 +33,19 @@ rmmod nouveau( optional )
 lsmod | grep nouveau
 ```
 
-如果没有任何回显，则说明nouveau没有被加载。
+如果没有任何回显，则说明nouveau没有被加载。如果还有东西也不要紧，直接继续后续步骤。
 
-4.
+4.查看能够安装的版本( 末尾带 recommended，但是不能是server版本)
+
 ```
 ubuntu-drivers devices
 ```
-check for suitable driver version (ending with recommended)
+
+如果没有就
+
+```
+sudo apt update
+```
 
 5.setting->software&updates->additional drivers安装驱动。选择合适的版本
 
