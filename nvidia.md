@@ -180,7 +180,6 @@ sudo cp cudnn-linux-x86_64-8.9.7.29_cuda11-archive/lib/libcudnn* /usr/local/cuda
 添加读取权限
 
 ```
-
 sudo chmod a+r /usr/local/cuda-12.4/include/cudnn.h
 sudo chmod a+r /usr/local/cuda-12.4/lib64/libcudnn*
 ```
