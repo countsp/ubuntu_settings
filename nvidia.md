@@ -4,7 +4,7 @@
 
 cuda 11.6.0
 
-cudnn 8.4.0
+cudnn 8.4.0.27
 
 tensorrt 8.4.2.4
 
