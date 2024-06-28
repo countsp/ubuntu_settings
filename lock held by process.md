@@ -4,6 +4,7 @@ E: Could not get lock /var/lib/apt/lists/lock. It is held by process 3734 (packa
 N: Be aware that removing the lock file is not a solution and may break your system.
 E: Unable to lock directory /var/lib/apt/lists/
 
+![Screenshot from 2024-06-28 11-11-28](https://github.com/countsp/ubuntu_settings/assets/102967883/d7f7325d-16ed-47fd-887c-aa25aeaa962b)
 
 为另一个进程正在使用 apt 系统数据库。通常这是因为有一个自动更新进程正在运行。
 
