@@ -9,13 +9,13 @@
 ```
 cd /usr/local/cuda/targets/x86_64-linux/lib/
 
-sudo cp libcudnn_cnn_train.so.8 libcudnn_cnn_train.so.8.bak
-sudo cp libcudnn_ops_train.so.8 libcudnn_ops_train.so.8.bak
-sudo cp libcudnn_adv_train.so.8 libcudnn_adv_train.so.8.bak
-sudo cp libcudnn.so.8 libcudnn.so.8.bak
-sudo cp libcudnn_ops_infer.so.8 libcudnn_ops_infer.so.8.bak
-sudo cp libcudnn_cnn_infer.so.8 libcudnn_cnn_infer.so.8.bak
-sudo cp libcudnn_adv_infer.so.8 libcudnn_adv_infer.so.8.bak
+sudo cp libcudnn_cnn_train.so.8 libcudnn_cnn_train.so.8.bak \
+sudo cp libcudnn_ops_train.so.8 libcudnn_ops_train.so.8.bak \
+sudo cp libcudnn_adv_train.so.8 libcudnn_adv_train.so.8.bak \
+sudo cp libcudnn.so.8 libcudnn.so.8.bak \
+sudo cp libcudnn_ops_infer.so.8 libcudnn_ops_infer.so.8.bak \
+sudo cp libcudnn_cnn_infer.so.8 libcudnn_cnn_infer.so.8.bak \
+sudo cp libcudnn_adv_infer.so.8 libcudnn_adv_infer.so.8.bak 
 ```
 
 **步骤 2：** 删除原始文件并创建符号链接
@@ -23,23 +23,23 @@ sudo cp libcudnn_adv_infer.so.8 libcudnn_adv_infer.so.8.bak
 然后，删除原始文件并为其创建符号链接：
 
 ```
-sudo rm libcudnn_cnn_train.so.8
-sudo rm libcudnn_ops_train.so.8
-sudo rm libcudnn_adv_train.so.8
-sudo rm libcudnn.so.8
-sudo rm libcudnn_ops_infer.so.8
-sudo rm libcudnn_cnn_infer.so.8
-sudo rm libcudnn_adv_infer.so.8
+sudo rm libcudnn_cnn_train.so.8 \
+sudo rm libcudnn_ops_train.so.8 \
+sudo rm libcudnn_adv_train.so.8 \
+sudo rm libcudnn.so.8 \
+sudo rm libcudnn_ops_infer.so.8 \
+sudo rm libcudnn_cnn_infer.so.8 \
+sudo rm libcudnn_adv_infer.so.8 \
 ```
 
 ```
-sudo ln -s libcudnn_cnn_train.so.8.x.x.x libcudnn_cnn_train.so.8
-sudo ln -s libcudnn_ops_train.so.8.x.x.x libcudnn_ops_train.so.8
-sudo ln -s libcudnn_adv_train.so.8.x.x.x libcudnn_adv_train.so.8
-sudo ln -s libcudnn.so.8.x.x.x libcudnn.so.8
-sudo ln -s libcudnn_ops_infer.so.8.x.x.x libcudnn_ops_infer.so.8
-sudo ln -s libcudnn_cnn_infer.so.8.x.x.x libcudnn_cnn_infer.so.8
-sudo ln -s libcudnn_adv_infer.so.8.x.x.x libcudnn_adv_infer.so.8
+sudo ln -s libcudnn_cnn_train.so.8.x.x.x libcudnn_cnn_train.so.8 \
+sudo ln -s libcudnn_ops_train.so.8.x.x.x libcudnn_ops_train.so.8 \
+sudo ln -s libcudnn_adv_train.so.8.x.x.x libcudnn_adv_train.so.8 \
+sudo ln -s libcudnn.so.8.x.x.x libcudnn.so.8 \
+sudo ln -s libcudnn_ops_infer.so.8.x.x.x libcudnn_ops_infer.so.8 \
+sudo ln -s libcudnn_cnn_infer.so.8.x.x.x libcudnn_cnn_infer.so.8 \
+sudo ln -s libcudnn_adv_infer.so.8.x.x.x libcudnn_adv_infer.so.8 \
 ```
 
 
