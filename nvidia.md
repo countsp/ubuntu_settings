@@ -1,5 +1,7 @@
 [image](https://docs.nvidia.com/deeplearning/tensorrt/support-matrix/index.html)
+
 [orin ref](https://blog.csdn.net/sinat_34774688/article/details/134790187)
+
 # reference version
 
 cuda 11.6.0
