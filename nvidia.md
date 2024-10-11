@@ -53,7 +53,7 @@ sudo apt update
 
 5.setting->software&updates->additional drivers安装驱动。选择合适的版本
 
-或者 使用命令 sudo apt install nvidia-driver-535-server-open 安装，如果太慢ppa换源
+或者 使用命令 sudo apt install nvidia-driver-535-open 安装，如果太慢ppa换源 (不要安装server版本，没有可视化界面)
 
 ```
 gedit /etc/apt/sources.list.d
@@ -66,8 +66,6 @@ gedit /etc/apt/sources.list.d
 reboot
 ````
 进入MOK
-
-![image](https://github.com/countsp/ubuntu_settings/assets/102967883/b675e3c9-1987-477a-b92b-4b761b8fc013)
 
 第二项 Enroll MDK -- continue -- yes -- 输入 password  -- Reboot
 
