@@ -110,6 +110,7 @@ sudo ln -s ./cuda-12.4/ ./cuda         (软链接换成安装的cuda版本)
 
 test
 ```
+source ~/.bashrc
 nvcc -V 
 ```
 ```
