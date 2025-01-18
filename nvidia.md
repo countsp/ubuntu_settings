@@ -299,6 +299,16 @@ pip3 install graphsurgeon-0.4.6-py2.py3-none-any.whl
 
 https://blog.51cto.com/u_12870633/6149817
 
+## ps 要求
+
+terminal需要能够运行trtexec
+
+需要加入
+
+```
+export PATH=$PATH:/home/office2004/TensorRT/TensorRT-8.6.1.6/bin:$PATH
+
+```
 ---
 
 # OpenCV 4.8.0 安裝
