@@ -32,6 +32,6 @@ ibus restart
 
 9.Settings -- Region and Language -- Input Sources  --  +
 
-选择 中文智能拼音
+选择 chinese 选 chinese (intelligent pinyin) 中文智能拼音
 
 如果没有应该是没有重启
