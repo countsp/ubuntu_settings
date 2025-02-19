@@ -1,3 +1,9 @@
+# try if this works install cuda along cudnn
+
+```
+sudo apt-get -y install cudnn9-cuda-12
+```
+# cuda
 ```
 wget -O /tmp/amd64.env https://raw.githubusercontent.com/autowarefoundation/autoware/main/amd64.env && source /tmp/amd64.env
 
@@ -16,3 +22,6 @@ echo 'export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}' >> ~/.bashrc
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> ~/.bashrc
 source ~/.bashrc
 ```
+# cudnn
+
+sudo apt-get -y install cudnn9-cuda-12
