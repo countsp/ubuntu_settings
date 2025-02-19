@@ -25,3 +25,9 @@ source ~/.bashrc
 # cudnn
 
 sudo apt-get -y install cudnn9-cuda-12
+
+# tensorrt
+download deb file from [source](https://developer.nvidia.com/nvidia-tensorrt-8x-download)
+sudo dpkg -i nv-tensorrt-local-repo-ubuntu2204-8.6.1-cuda-11.8_1.0-1_amd64.deb
+sudo cp /var/nv-tensorrt-local-repo-ubuntu2204-8.6.1-cuda-11.8/nv-tensorrt-local-0628887B-keyring.gpg /usr/share/keyrings/
+sudo dpkg -i nv-tensorrt-local-repo-ubuntu2204-8.6.1-cuda-11.8_1.0-1_amd64.deb
