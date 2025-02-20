@@ -12,6 +12,15 @@ cudnn 8.4.0.27
 
 tensorrt 8.4.2.4
 
+# find compatiale version
+
+[link](https://blog.csdn.net/Vingnir/article/details/135457691?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171392841816800225536121%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=171392841816800225536121&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~hot_rank-2-135457691-null-null.142%5Ev100%5Epc_search_result_base5&utm_term=tensorrt%E5%92%8Ccuda%E5%AF%B9%E5%BA%94%E7%89%88%E6%9C%AC&spm=1018.2226.3001.4187)
+
+
+![Screenshot from 2025-02-20 18-42-16](https://github.com/user-attachments/assets/84b2ef2a-2903-483b-bc79-597e9f1bb7cf)
+
+![Screenshot from 2025-02-20 18-41-53](https://github.com/user-attachments/assets/078201ff-afcf-4eb0-ab2b-0d4bb5608e2d)
+
 # GPU Driver
 
 1.在安装NVIDIA驱动时，需要禁用nouveau驱动才可以。
