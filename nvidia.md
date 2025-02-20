@@ -426,3 +426,25 @@ sudo reboot
 jtop
 ```
 ![Screenshot from 2024-07-16 15-24-34](https://github.com/user-attachments/assets/71a3f1af-4286-49a2-921d-2ba58999dc9e)
+
+
+
+
+# 24.2.20 attempt designate 4.2.0
+
+```
+cd ~
+git clone https://github.com/opencv/opencv.git
+cd opencv
+git checkout 4.x  # 选择合适的版本（例如4.2.0版本）
+
+# 下载OpenCV的额外模块（如果需要）
+git clone https://github.com/opencv/opencv_contrib.git
+cd opencv_contrib
+git checkout 4.x  # 确保与OpenCV主库版本一致
+
+cd ~/opencv
+mkdir build
+cd build
+
+```
