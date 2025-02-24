@@ -1,4 +1,4 @@
-22.04
+# all running under 22.04
 
 https://zhuanlan.zhihu.com/p/686519593
 
@@ -7,6 +7,12 @@ https://zhuanlan.zhihu.com/p/686519593
 /home/rsp4070tis/carla/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping: error while loading shared libraries: libomp.so.5: cannot open shared object file: No such file or directory
 
 rsp4070tis@rsp4070tis-MS-7D17:~$ sudo apt-get install libomp5
+
+# if there is no 'carla-0.9.14-ubuntu-22.04'
+
+https://github.com/gezp/carla_ros/releases/tag/carla-0.9.14-ubuntu-22.04
+
+download here
 
 # if black screen running
 
