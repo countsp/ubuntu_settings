@@ -2,8 +2,13 @@
 
 https://zhuanlan.zhihu.com/p/686519593
 
+# if libomp.so.5 error:
 
-if black screen running
+/home/rsp4070tis/carla/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping: error while loading shared libraries: libomp.so.5: cannot open shared object file: No such file or directory
+
+rsp4070tis@rsp4070tis-MS-7D17:~$ sudo apt-get install libomp5
+
+# if black screen running
 
 ```
 sh ~/carla/CarlaUE4.sh
