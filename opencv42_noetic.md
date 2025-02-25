@@ -50,8 +50,9 @@ ROS2的cv_bridge和opencv版本不匹配问题
     $ cmake -DCMAKE_INSTALL_PREFIX=/opt/ros/foxy ..
      
     $ sudo make install
-————————————————
 
-                            版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
-                        
-原文链接：https://blog.csdn.net/zhngyue123/article/details/133900617
+# 查看opencv路径
+pkg-config --cflags --libs opencv4
+
+# 查看opencv路径版本
+opencv_version
