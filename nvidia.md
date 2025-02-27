@@ -216,6 +216,8 @@ cat /usr/local/cuda-11.6/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 
 [Ref](https://blog.csdn.net/m0_60657960/article/details/134770397)\
 
+[official](https://docs.nvidia.com/deeplearning/tensorrt/latest/installing-tensorrt/installing.html)
+
 Check for support version!
 
 [tensorrt support version](https://docs.nvidia.com/deeplearning/tensorrt/support-matrix/index.html)
