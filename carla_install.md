@@ -48,3 +48,9 @@ sudo cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6替换掉报错的libstdc++.so.6
 输入 locate libstdc++.so.6 可以查找文件。
 
 输入 strings libstdc++.so.6|grep GLIBCXX_3.4.30 可以查看该库中是否存在GLIBCXX_3.4.30。缺少其它CXX使用类似方法。 
+
+# shapely
+
+pip install shapely
+
+pip install networkx
