@@ -22,7 +22,7 @@ sh ~/carla/CarlaUE4.sh
 
 install gpu driver first
 
-# if error like this
+# if GLIBCXX error
 ```
 (carla) rsp4070tis@rsp4070tis-MS-7D17:~/carla/PythonAPI/examples$ python manual_control.py 
 Traceback (most recent call last):
