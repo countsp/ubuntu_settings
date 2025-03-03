@@ -334,6 +334,10 @@ sudo sudo apt-get purge *libopencv*
 
     CUDA_ARCH_BIN=8.7 需要事先找出版本
 
+    [src](https://developer.nvidia.com/cuda-gpus)
+    
+    RTX A4000 CUDA_ARCH_BIN=7.5 
+
 ## 新建.sh文件
 
 ```
