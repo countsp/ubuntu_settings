@@ -444,7 +444,13 @@ jtop
 
 
 
+# python 调用 build 安装的 opencv
+1.在cmake的 build 目录下查找cv2*.so文件
 
+2. 拷贝到使用python的site-packages目录，移除cv2文件夹。
+
+3. 使用 import cv2; print(cv2.__file__)验证
+   
 # 24.2.20 attempt designate 4.2.0
 
 ```
