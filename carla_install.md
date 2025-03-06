@@ -54,3 +54,5 @@ pip install pygame
 pip install shapely
 
 pip install networkx
+
+pip install numpy
