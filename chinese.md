@@ -35,3 +35,7 @@ ibus restart
 选择 chinese 选 chinese (intelligent pinyin) 中文智能拼音
 
 如果没有应该是没有重启
+
+
+# 22.04
+[src](https://blog.csdn.net/liutuoqi123/article/details/140596599)
