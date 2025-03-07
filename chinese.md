@@ -38,4 +38,4 @@ ibus restart
 
 
 # 22.04
-[src](https://blog.csdn.net/liutuoqi123/article/details/140596599)
+[看这个链接设置](https://blog.csdn.net/liutuoqi123/article/details/140596599)
