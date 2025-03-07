@@ -8,7 +8,7 @@ https://zhuanlan.zhihu.com/p/686519593
 
 rsp4070tis@rsp4070tis-MS-7D17:~$ sudo apt-get install libomp5
 
-# if there is no 'carla-0.9.14-ubuntu-22.04'
+# if there is no 'carla-0.9.14-cp310-cp310-linux_x86_64.whl '
 
 https://github.com/gezp/carla_ros/releases/tag/carla-0.9.14-ubuntu-22.04
 
