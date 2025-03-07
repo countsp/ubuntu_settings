@@ -35,8 +35,9 @@ echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRA
 source ~/.bashrc
 ```
 # cudnn
+[download source](https://developer.nvidia.com/tensorrt/download/10x)
 
-sudo apt-get -y install cudnn9-cuda-12
+![Screenshot from 2025-03-07 22-43-10](https://github.com/user-attachments/assets/929cf4f2-5098-4bc0-bdfd-d6f51be9bd4f)
 
 # tensorrt
 download deb file from [source](https://developer.nvidia.com/nvidia-tensorrt-8x-download)
