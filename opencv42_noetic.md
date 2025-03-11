@@ -56,3 +56,17 @@ pkg-config --cflags --libs opencv4
 
 # 查看opencv路径版本
 opencv_version
+
+# 报错
+```
+.h:43:10: fatal error: opencv2/core/core.hpp: No such file or directory
+   43 | #include <opencv2/core/core.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+```
+在cmakelist中添加
+```
+set(OpenCV_INCLUDE_DIRS "/usr/local/include/opencv4")
+set(OpenCV_DIR "/usr/local/include/opencv4")
+
+include_directories(/usr/local/include/opencv4)
+```
