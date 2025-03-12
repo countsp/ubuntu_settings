@@ -310,6 +310,32 @@ pip3 install graphsurgeon-0.4.6-py2.py3-none-any.whl
 
 https://blog.51cto.com/u_12870633/6149817
 
+# tensorrt cmake问题
+```
+CMake Error at CMakeLists.txt:7 (find_package):
+  By not providing "Findtensorrt_cmake_module.cmake" in CMAKE_MODULE_PATH
+  this project has asked CMake to find a package configuration file provided
+  by "tensorrt_cmake_module", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "tensorrt_cmake_module" with any of the following names:
+
+    tensorrt_cmake_moduleConfig.cmake
+    tensorrt_cmake_module-config.cmake
+
+  Add the installation prefix of "tensorrt_cmake_module" to CMAKE_PREFIX_PATH
+  or set "tensorrt_cmake_module_DIR" to a directory containing one of the
+  above files.  If "tensorrt_cmake_module" provides a separate development
+  package or SDK, be sure it has been installed.
+
+```
+在cmakelist中添加
+```
+set(TensorRT_DIR "/home/rsp4070tis/Downloads/TensorRT-10.9.0.34")
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include ${TensorRT_DIR}/include)
+link_directories($${TensorRT_DIR}/lib) # -L
+```
 ## ps 要求
 
 terminal需要能够运行trtexec
