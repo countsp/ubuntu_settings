@@ -39,3 +39,18 @@ ibus restart
 
 # 22.04
 [看这个链接设置](https://blog.csdn.net/liutuoqi123/article/details/140596599)
+
+sudo apt update
+sudo apt install language-pack-zh-hans
+sudo apt install ibus ibus-libpinyin
+
+
+
+打开“设置”应用，找到“区域与语言”或类似选项。
+
+确保已添加并启用中文（简体）语言。
+
+进入“输入源”或“键盘输入法”设置，点击“+”添加新输入源，搜索并选择“汉语（简体）- IBus”下的某个中文输入法，如“IBus Pinyin”。
+
+
+ibus-setup
