@@ -56,3 +56,14 @@ pip install shapely
 pip install networkx
 
 pip install numpy
+
+
+# all running under 20.04
+
+## autoware install
+
+https://zhuanlan.zhihu.com/p/613127230
+
+## carla install
+
+https://blog.csdn.net/wenquantongxin/article/details/142625286
