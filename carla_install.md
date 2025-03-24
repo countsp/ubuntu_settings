@@ -67,3 +67,36 @@ https://zhuanlan.zhihu.com/p/613127230
 ## carla install
 
 https://blog.csdn.net/wenquantongxin/article/details/142625286
+
+# 错误修正帖
+
+[error](https://zhuanlan.zhihu.com/p/12329118060)
+
+## error Could not find a connection between 'map' and 'base_link' because they are not part of the same tree.Tf
+
+需要修改的地方：carla_pointcloud_interface_node.cpp
+
+改为true后，会启用点云转换并发布不同的topic（详见源代码）
+
+PointCloudInterface::PointCloudInterface(const rclcpp::NodeOptions & node_options)
+: Node("carla_pointcloud_interface_node", node_options), 
+tf_output_frame_("base_link"), b_create_ex_(true)  //将此处的默认参数b_create_ex_(false) 改为 true
+
+修改位置2 、 3：此处主要是将点云发布到veloodyne_top这个 tf坐标系下
+
+    {
+      auto ros_pc_msg_ptr = std::make_unique<sensor_msgs::msg::PointCloud2>();
+      pcl::toROSMsg(*valid_points_xyzir, *ros_pc_msg_ptr);
+      ros_pc_msg_ptr->header.frame_id = "velodyne_top";    //此处由seneor_kit_base_link修改为velodyne_top
+      velodyne_points_pub_->publish(std::move(ros_pc_msg_ptr));
+    }
+
+    ...(省略中间未修改的地方)
+
+    {//这是下面另一部分的Publish的代码，同样修改
+      auto ros_pc_ex_msg_ptr = std::make_unique<sensor_msgs::msg::PointCloud2>();
+      pcl::toROSMsg(*valid_points_xyziradt, *ros_pc_ex_msg_ptr);
+
+      ros_pc_ex_msg_ptr->header.frame_id = "velodyne_top";//此处由seneor_kit_base_link修改为velodyne_top
+      velodyne_points_ex_pub_->publish(std::move(ros_pc_ex_msg_ptr));
+    }
