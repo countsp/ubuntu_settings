@@ -1,3 +1,14 @@
+```
+git clone ...
+cd repo-name              # 进入项目文件夹
+
+操作后
+git status                # 查看修改了哪些文件
+git add .                 # 添加所有更改的文件到暂存区
+git commit -m "你的提交说明"  # 提交更改
+git push origin main      # 推送到远程仓库的 main 分支
+```
+
 将一个新的 Python 代码文件夹上传到 GitHub 的步骤如下：
 
 1. 在 GitHub 上创建一个新的仓库
