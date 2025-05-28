@@ -491,3 +491,22 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local/ -D OPENCV_
 make -j8 
 sudo make install
 ```
+
+# tz cv_bridge
+```
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+
+git clone https://github.com/ros-perception/vision_opencv.git -b noetic
+
+```
+修改 cv_bridge 的 CMakeLists.txt：
+
+```
+set(OpenCV_DIR /usr/local/share/opencv4)  # 视你的OpenCV安装位置而定
+find_package(OpenCV REQUIRED)
+```
+
+```
+nvidia@master-desktop:~/software/cv_bridge$ catkin build cv_bridge
+```
