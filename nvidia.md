@@ -477,21 +477,17 @@ jtop
 
 3. 使用 import cv2; print(cv2.__file__)验证
    
-# 24.2.20 attempt designate 4.2.0
+# tz Orin上安装 25.5.28
+![Uploading Screenshot from 2025-05-28 15-06-33.png…]()
+
+contrib放在opencv内（在build时候替换绝对路径）
 
 ```
-cd ~
-git clone https://github.com/opencv/opencv.git
-cd opencv
-git checkout 4.x  # 选择合适的版本（例如4.2.0版本）
-
-# 下载OpenCV的额外模块（如果需要）
-git clone https://github.com/opencv/opencv_contrib.git
-cd opencv_contrib
-git checkout 4.x  # 确保与OpenCV主库版本一致
-
-cd ~/opencv
 mkdir build
 cd build
 
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local/ -D OPENCV_EXTRA_MODULES_PATH=/home/nvidia/software/opencv-4.6.0/opencv_contrib-4.6.0/modules/ -D WITH_CUDA=ON -D CUDA_ARCH_BIN=8.7 -D CUDA_ARCH_PTX="" -D BUILD_opencv_python3=ON -D ENABLE_FAST_MATH=ON -D CUDA_FAST_MATH=ON -D WITH_CUBLAS=ON -D ENABLE_NEON=ON -D WITH_OPENGL=ON -D WITH_LIBV4L=ON -D WITH_GSTREAMER=ON -D WITH_GSTREAMER_0_10=OFF -D WITH_QT=ON -D CUDA_NVCC_FLAGS="--expt-relaxed-constexpr" -D WITH_TBB=ON -D OPENCV_GENERATE_PKGCONFIG=ON -D WITH_GTK_2_X=ON -D BUILD_TIFF=ON ..
+
+make -j8 
+sudo make install
 ```
