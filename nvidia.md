@@ -508,5 +508,10 @@ find_package(OpenCV REQUIRED)
 ```
 
 ```
-nvidia@master-desktop:~/software/cv_bridge$ catkin build cv_bridge
+cd catkin_ws
+
+catkin build cv_bridge
+
+echo 'export LD_LIBRARY_PATH=~/software/cv_bridge/devel/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
+source ~/.bashrc
 ```
