@@ -520,3 +520,5 @@ catkin build cv_bridge
 echo 'export LD_LIBRARY_PATH=~/software/cv_bridge/devel/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
 source ~/.bashrc
 ```
+## 清除4.2
+sudo apt remove --purge 'libopencv*4.2*'
