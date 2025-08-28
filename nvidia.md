@@ -226,6 +226,7 @@ Check for support version!
 
 [tensorRT 8.x 下载地址](https://developer.nvidia.com/nvidia-tensorrt-8x-download)
 
+[所有版本](https://developer.nvidia.com/tensorrt/download)
 -> 选择 TensorRT 8.4 GA Update 1
 
 -> 选择 TensorRT 8.4 GA Update 1 for Linux x86_64 and CUDA 11.0, 11.1, 11.2, 11.3, 11.4, 11.5, 11.6 and 11.7 TAR Package
